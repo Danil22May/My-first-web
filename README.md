@@ -8,7 +8,7 @@ https://www.figma.com/file/7aK0nOecqwXufospFZmcve/MyFirstWeb-Olena-Daniil?type=d
 
 ## Preview
 
-![screenshot](media/screenshot)
+![screenshot](media/screenshot.png)
 
 ## Install
 
