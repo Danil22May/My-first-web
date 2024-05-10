@@ -59,13 +59,13 @@ p {
 }
 
 section {
-    padding: 100px 15px;
+    padding: 100px 40px;
 }
 
 /* other styles */
 header {
     background: no-repeat url(images/chocolote-main-min.jpg);
-    padding: 110px 15px;
+    padding: 110px 40px;
     background-size: cover;
 }
 
@@ -124,6 +124,21 @@ ul {
     gap: 30px;
 }
 
+/* Media query for screens smaller than 768px */
+@media screen and (max-width: 1602px) {
+    ul {
+        grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
+    }
+}
+
+/* Media query for screens smaller than 480px */
+@media screen and (max-width: 1058px) {
+    ul {
+        grid-template-columns: 1fr; /* One column with full width */
+        max-width: 800px;
+    }
+}
+
 .card {
     background-color: var(--bg-main-light);
     border-radius: 16px;
@@ -131,6 +146,9 @@ ul {
 
 .card img {
     border-radius: 16px 16px 0px 0px;
+    width: 100%; /* Ensure the image fills its container horizontally */
+    height: 100%; /* Ensure the image fills its container vertically */
+    object-fit: cover; /* Scale the image to maintain its aspect ratio while covering the entire container */
 }
 
 .card div {
@@ -152,7 +170,7 @@ ul {
 
 .section-d {
     background: linear-gradient(90deg, var(--accent) 50%, var(--bg-main-dark) 50%);
-    padding: 100px 15px;
+    padding: 100px 40px;
 }
 
 /* Container properties */
@@ -204,7 +222,7 @@ Flex item properties
 
 footer {
     background-color: var(--bg-dark);
-    padding: 37px 15px;
+    padding: 37px 20px;
 }
 
 .boxf {
