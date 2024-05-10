@@ -128,24 +128,24 @@ ul {
     gap: 30px;
 }
 
-/* Media query for screens smaller than 768px */
-@media screen and (max-width: 1602px) {
+/* Media query for screens smaller than 1280px */
+@media screen and (max-width: 1280px) {
     ul {
-        grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
+        grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */    
     }
 }
 
-/* Media query for screens smaller than 480px */
-@media screen and (max-width: 1058px) {
+/* Media query for screens smaller than 768px */
+@media screen and (max-width: 768px) {
     ul {
         grid-template-columns: 1fr; /* One column with full width */
-        max-width: 800px;
     }
 }
 
 .card {
     background-color: var(--bg-main-light);
     border-radius: 16px;
+    height: 100%;
 }
 
 .card img {
