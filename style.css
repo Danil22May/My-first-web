@@ -106,9 +106,18 @@ header > div {
 .container {
     max-width: 1058px;
     margin: 0px auto;
+    gap: 30px;
+}
+
+.container--grid{
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
-    gap: 30px;
+}
+
+.container--flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .container h2 {
@@ -163,21 +172,10 @@ ul {
     margin-bottom: 10px;
 }
 
-.container2 {
-    max-width: 1058px;
-    margin: 0px auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-}
-
 .section-d {
     background: linear-gradient(90deg, var(--accent) 50%, var(--bg-main-dark) 50%);
-    padding: 100px 40px;
 }
 
-/* Container properties */
 .container3 {
     max-width: 1602px; /* Sets the maximum width of the container */
     margin: 0 auto; /* Centers the container horizontally */
@@ -187,28 +185,14 @@ ul {
     gap: 60px; /* Sets the gap between grid items */
 }
 
-/* Grid item properties */
 .container3 div {
     max-width: 649px; /* Sets the maximum width of each grid item */
 }
 
-/* Same layout by using flex
-Container properties
-.container3 {
-    max-width: 1602px; (Sets the maximum width of the container)
-    margin: 0px auto; (Centers the container horizontally)
-    display: flex; (Uses flexbox layout for the container)
-    flex-direction: row; (Arranges flex items in a row)
-    justify-content: space-between; (Distributes space evenly between flex items along the main axis)
-    gap: 60px; (Sets the gap between flex items)
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child */
+.container3 div:nth-child(2) {
+    justify-self: end;
 }
-
-Flex item properties
-.container3 div {
-    max-width: 649px; (Sets the maximum width of each flex item)
-    flex-grow: 1; (Specifies how much the flex item can grow to fill the available space)
-    flex-basis: 0; (Specifies the initial size of the flex item before free space is distributed)
-}*/
 
 .container3 h2 {
     color: var(--h-light);
